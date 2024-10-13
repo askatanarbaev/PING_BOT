@@ -15,7 +15,7 @@ async def ping(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         else:
             await update.message.reply_text(f"PING НЕ УДАЛСЯ!\n{response.stderr.decode()}")
     else:
-        await update.message.reply_text("Пожалуйста напишите IP address чтобы пинговать. Например: /ping 192.168.1.100")
+        await update.message.reply_text("Пожалуйста напишите IP address чтобы пинговать.\nНапример: /ping 192.168.1.100")
 
 # Start command handler
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
